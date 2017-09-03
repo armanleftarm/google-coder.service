@@ -4,8 +4,8 @@ After=network.target
 
 [Service]
 Type=simple
-WorkingDirectory=/home/lenin/coder/coder-base
-ExecStart=/home/lenin/.nvm/versions/node/v4.8.4/bin/node server.js
+WorkingDirectory=~/coder/coder-base
+ExecStart=~/.nvm/versions/node/v4.8.4/bin/node server.js
 Restart=always
 
 [Install]
