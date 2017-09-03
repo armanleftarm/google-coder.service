@@ -1,0 +1,12 @@
+[Unit]
+Description=Google Coder
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/lenin/coder/coder-base
+ExecStart=/home/lenin/.nvm/versions/node/v4.8.4/bin/node server.js
+Restart=always
+
+[Install]
+WantedBy=default.target
